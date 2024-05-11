@@ -8,16 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-}
-
-header {
-  height: 50px;
-  display: flex;
-  padding: 0 2rem;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  background: #fafafa;
+  background-color: #F0F0F0;
 }
 
 main {
@@ -45,4 +36,24 @@ section ul li {
 .content,
 p {
   padding: 1rem 0;
+}
+
+#logo {
+  margin-right: 15px;
+  transition: 0.7s;
+  transition: opacity 0.3s ease;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.header {
+  display: flex;
+  width: 1460px;
+  margin-left: 185px;
+  margin-top: 32px;
+  align-items: center;
+  justify-content: center;
 }

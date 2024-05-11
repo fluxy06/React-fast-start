@@ -1,0 +1,49 @@
+#box-menu {
+  visibility: visible;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#a1 {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    transition: 1.5s;
+}
+#a2 {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    transition: 1.5s;
+}
+#a3 {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    margin-right: 500px;
+    transition: 1.5s;
+}
+
+#a1:hover {
+  text-decoration: none;
+  color: rgb(16, 0, 243);
+  margin-right: 20px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+#a2:hover {
+  text-decoration: none;
+  color: rgb(16, 0, 243);
+  margin-right: 20px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+#a3:hover {
+  text-decoration: none;
+  color: rgb(16, 0, 243);
+  margin-right: 20px;
+  margin-right: 500px;
+  font-size: 17px;
+  transition: 0.5s;
+}

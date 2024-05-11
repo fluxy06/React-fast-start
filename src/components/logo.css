@@ -1,0 +1,32 @@
+#logo1 {
+    margin-right: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#logo1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#logo2 {
+    margin-right: 15px;
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.menu-container {
+    position: relative;
+    opacity: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+    top: -30px;
+}
+
+.menu-container.show {
+    opacity: 100%;
+    margin-left: 80px;
+    transition: 0.5s;/* показываем контейнер */
+}

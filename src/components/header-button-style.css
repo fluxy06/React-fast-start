@@ -1,0 +1,20 @@
+#headBut {
+    background-color: white;
+    color: black;
+    width: 115px;
+    height: 52px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+#headBut:hover {
+    background-color: white;
+    color: black;
+    width: 115px;
+    height: 52px;
+    transform: scale(1.10);
+    transition: 0.5s;
+    font-size: 16px;
+    color: rgba(140, 0, 255, 0.822);
+}
