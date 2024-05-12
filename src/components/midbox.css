@@ -1,0 +1,22 @@
+#preText {
+    text-align: left;
+    font-size: 50px;
+    transition: 0.4s ease-out;
+}
+
+#preText:hover {
+    text-align: left;
+    font-size: 60px;
+    color: purple;
+    transition: 0.4s ease-in;
+}
+
+#TEXT {
+    font-size: 20px;
+    text-align: center;
+}
+
+#Text2 {
+    text-align: right;
+    opacity: 90%;
+}

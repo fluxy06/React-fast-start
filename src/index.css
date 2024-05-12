@@ -57,3 +57,10 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.Mid-Box {
+  display: grid;
+  justify-content: space-between;
+  margin-left: 370px;
+  margin-top: 160px;
+}
