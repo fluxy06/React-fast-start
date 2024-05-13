@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export default function INPT() {
     const [act, setAct] = useState('my-input')
-    const [eml, setEml] = useState(false)
+    const [eml, setEml] = useState()
     function Active() {
         if (act == 'my-input')
             {
