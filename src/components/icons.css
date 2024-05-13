@@ -1,0 +1,32 @@
+#icn {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#in1 {
+    margin-right: 28px;
+    transition: 0.5s ease-out;
+}
+
+#in2 {
+    margin-right: 28px;
+    transition: 0.5s ease-out;
+}
+
+#in3 {
+    transition: 0.5s ease-out;
+}
+
+#in1:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+#in2:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+#in3:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}

@@ -13,6 +13,7 @@ export default function INPT() {
     function ChekEml() {
         if (eml.includes("@")){
             alert(`Почта успешно отправлена: \n${eml}`)
+            setAct('my-input')
         }
         else if (eml.length <= 3) {
             alert('Количество символов недопустимо мало')
