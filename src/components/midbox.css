@@ -5,8 +5,9 @@
 }
 
 #preText:hover {
+    position: relative;
     text-align: left;
-    font-size: 60px;
+    font-size: 51px;
     color: purple;
     transition: 0.4s ease-in;
 }

@@ -3,16 +3,16 @@ import { useState } from 'react'
 
 
 
-export default function HeaderButton({children}) {
-    
+export default function HeaderButton({children, onClick}) {
+    const [inp, setInp] = useState(false)
     function InpClick() {
 
         if (children == 'Вход'){
-            console.log('Вход')
+            onClick('login')
         }
 
         if(children == 'Регистрация'){
-            console.log('Регистрация')
+            onClick('register')
         }
     }
 

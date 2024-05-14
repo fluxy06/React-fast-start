@@ -6,26 +6,55 @@ import MidBox from "./components/mid";
 import INPT from "./components/inp";
 import ICN from "./components/icons";
 import Bottom from "./components/bottom";
-// Определение функции Dropdown вне компонента App
-
+import LoginForm from "./components/form-input";
 export default function App() {
+  const [curScr, setCurScr] = useState('home');
+
+  function handleHeaderButtonClick(screen) {
+    setCurScr(screen);
+  }
+
+  function renderContent() {
+    if (curScr === 'login') {
+      return (
+        <div id="boxX">
+          <LoginForm></LoginForm>
+        </div>
+      );
+    }
+
+    else if (curScr === 'register') {
+      return (
+        <div>
+          
+        </div>
+      );
+
+
+    } else {
+      return (
+        <>
+          <div className="Mid-Box">
+            <MidBox />
+            <INPT />
+            <ICN />
+          </div>
+          <div id="BottomBox">
+            <Bottom />
+          </div>
+        </>
+      );
+    }
+  }
+
   return (
     <div>
       <div className="header">
-        {/* Использование компонента Dropdown */}
-        <img src="src\components\Illustration_1pep.png" alt="" id="back-img"/>
-        <LOGO></LOGO>
-        <HeaderButton>Вход</HeaderButton>
-        <HeaderButton>Регистрация</HeaderButton>
+        <LOGO />
+        <HeaderButton onClick={handleHeaderButtonClick}>Вход</HeaderButton>
+        <HeaderButton onClick={handleHeaderButtonClick}>Регистрация</HeaderButton>
       </div>
-      <div className="Mid-Box">
-        <MidBox></MidBox>
-        <INPT></INPT>
-        <ICN></ICN>
-      </div>
-      <div id="BottomBox">
-        <Bottom></Bottom>
-      </div>
+      {renderContent()}
     </div>
   );
 }

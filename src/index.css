@@ -79,3 +79,9 @@ p {
   margin-bottom: 100px;
   pointer-events: none;
 }
+
+#boxX {
+  display: grid;
+  justify-content: center;
+  margin-top: 125px;
+}
