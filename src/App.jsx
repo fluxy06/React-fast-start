@@ -5,7 +5,7 @@ import LOGO from './components/logo';
 import MidBox from "./components/mid";
 import INPT from "./components/inp";
 import ICN from "./components/icons";
-
+import Bottom from "./components/bottom";
 // Определение функции Dropdown вне компонента App
 
 export default function App() {
@@ -22,6 +22,9 @@ export default function App() {
         <MidBox></MidBox>
         <INPT></INPT>
         <ICN></ICN>
+      </div>
+      <div id="BottomBox">
+        <Bottom></Bottom>
       </div>
     </div>
   );

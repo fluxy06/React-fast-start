@@ -14,9 +14,12 @@
 #TEXT {
     font-size: 20px;
     text-align: center;
+    color: black;
 }
 
 #Text2 {
     text-align: right;
     opacity: 90%;
+    color: black;
 }
+
