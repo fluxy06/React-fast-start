@@ -7,6 +7,9 @@ import INPT from "./components/inp";
 import ICN from "./components/icons";
 import Bottom from "./components/bottom";
 import LoginForm from "./components/form-input";
+import RegForm from "./components/registerForm";
+
+
 export default function App() {
   const [curScr, setCurScr] = useState('home');
 
@@ -26,12 +29,27 @@ export default function App() {
     else if (curScr === 'register') {
       return (
         <div>
-          
+          <RegForm></RegForm>
         </div>
       );
 
 
-    } else {
+    } 
+    else if (curScr === 'main') {
+      return(
+        <>
+        <div className="Mid-Box">
+            <MidBox />
+            <INPT />
+            <ICN />
+          </div>
+          <div id="BottomBox">
+            <Bottom />
+          </div>
+        </>
+      )
+    }
+    else {
       return (
         <>
           <div className="Mid-Box">
@@ -51,6 +69,7 @@ export default function App() {
     <div>
       <div className="header">
         <LOGO />
+        <HeaderButton onClick={handleHeaderButtonClick}>Главная</HeaderButton>
         <HeaderButton onClick={handleHeaderButtonClick}>Вход</HeaderButton>
         <HeaderButton onClick={handleHeaderButtonClick}>Регистрация</HeaderButton>
       </div>

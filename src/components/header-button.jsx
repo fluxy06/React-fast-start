@@ -14,6 +14,10 @@ export default function HeaderButton({children, onClick}) {
         if(children == 'Регистрация'){
             onClick('register')
         }
+
+        if(children == 'Главная'){
+            onClick('main')
+        }
     }
 
     return(
